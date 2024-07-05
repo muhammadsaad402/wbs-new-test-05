@@ -4,7 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": {
+      "cmd": "./vercel-build.sh",
+      "env": {
+        "SKIP_INSTALL": "true"
+      }
+    },
     "start": "next start",
     "lint": "next lint"
   },
