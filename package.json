@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm install --legacy-peer-deps",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
@@ -15,8 +14,8 @@
     "@ffmpeg/core": "^0.11.0",
     "@ffmpeg/ffmpeg": "^0.11.6",
     "@mui/icons-material": "^5.14.0",
+    "@mui/joy": "^5.0.0-alpha.87",
     "@mui/material": "^5.14.0",
-    "@mui/joy": "^5.0.0-beta.36",
     "@mui/x-date-pickers": "^6.10.0",
     "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.7.0",
@@ -60,9 +59,6 @@
     "swiper": "^10.2.0",
     "xlsx": "^0.18.5",
     "yup": "^1.2.0"
-  },
-  "engines": {
-    "node": "20.4.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
