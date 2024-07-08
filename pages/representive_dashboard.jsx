@@ -3,7 +3,7 @@ import Footer from "@/components/footer/Footer";
 import Topbar from "@/components/topbar/Topbar";
 import React, { useState } from "react";
 import styles from "../styles/Representive.module.css";
-import card_img from "../src/Asset/Images/ArtistProfile.png";
+import card_img from "../src/Asset/Images/actor_dp.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -103,9 +103,10 @@ export default function representive_dashboard() {
                 <div className={styles.user_image}>
                   <Image
                     src={`${baseUrl}/${artist?.profile_image}`}
+                    // src={card_img}
                     alt="image"
-                    width={100}
-                    height={100}
+                    width={10000}
+                    height={10000}
                   />
                 </div>
 
@@ -142,9 +143,8 @@ export default function representive_dashboard() {
               </div>
             ))}
         </div>
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 }

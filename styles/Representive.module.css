@@ -22,13 +22,12 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 50vh;
   /* padding: 20px 0; */
 }
 
 .card {
-  width: 20em;
-  background-color: rgb(255, 255, 255);
+  width: 16em;
   overflow: hidden;
   border-radius: 1em;
   text-align: center;
@@ -36,25 +35,47 @@
 }
 
 .user_image {
-  padding: 3em 0;
-  background: #cea234;
+  /* padding: 3em 0; */
+  /* background: #cea234; */
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  height: 20rem;
+  /* border: 1px solid white; */
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
   /* background-image: linear-gradient(70deg, #61a1dd, #0083fd); */
 }
 
 .user_image img {
-  width: 7em;
-  height: 7em;
-  border-radius: 50%;
-  box-shadow: 0 0.6em 1.8em;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 0.6em 1.8em; */
   object-fit: cover;
 }
 
 .content {
+  background-color: rgb(255, 255, 255);
   color: #565656;
-  padding: 2.2em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 5px;
 }
 
 .name {
@@ -80,13 +101,30 @@
   text-decoration: none;
   color: rgb(48, 41, 41);
   text-transform: capitalize;
-  width: 100%;
-  background: #cea234;
+  width: 50%;
+  /* background: #cea234; */
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
   /* background-image: linear-gradient(60deg, #0083fd, #61a1dd); */
-  font-size: 1.2em;
-  padding: 1em 3em;
+  font-size: 1rem;
+  padding: 0.2em 1em;
   border-radius: 5em;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .effect_withoutbackgroud {
@@ -96,11 +134,11 @@
   text-decoration: none;
   color: rgb(48, 41, 41);
   text-transform: capitalize;
-  width: 100%;
+  width: 50%;
   /* background: #cea234; */
   /* background-image: linear-gradient(60deg, #0083fd, #61a1dd); */
-  font-size: 1.2em;
-  padding: 1em 3em;
+  font-size: 1rem;
+  padding: 0.2em 1em;
   border-radius: 5em;
   overflow: hidden;
 }

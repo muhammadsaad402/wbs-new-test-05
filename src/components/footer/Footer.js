@@ -120,7 +120,7 @@ function Footer() {
 
           <div className={styles.box}>
             {footerSetting?.map((currentObject, index) => (
-              <div className={styles.sub_card} key={index}>
+              <div key={index}>
                 <p className={styles.content}>
                   {/* © 2023 wbs copy right. All Rights Reserved. */}
                   {/* {process.env.NEXT_PUBLIC_COPYRIGHT} */}

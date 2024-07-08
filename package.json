@@ -3,13 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build",
     "dev": "next dev",
-    "build": {
-      "cmd": "./vercel-build.sh",
-      "env": {
-        "SKIP_INSTALL": "true"
-      }
-    },
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,9 +14,8 @@
     "@ffmpeg/core": "^0.11.0",
     "@ffmpeg/ffmpeg": "^0.11.6",
     "@mui/icons-material": "^5.14.0",
-    "@mui/joy": "^5.0.0-alpha.87",
     "@mui/material": "^5.14.0",
-    "@mui/x-data-grid": "^6.10.0",
+    "@mui/joy": "^5.0.0-beta.36",
     "@mui/x-date-pickers": "^6.10.0",
     "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.7.0",
@@ -44,9 +38,6 @@
     "react-circular-progressbar": "^2.1.0",
     "react-datepicker": "^4.20.0",
     "react-dom": "18.2.0",
-    "react-dropdown-date": "^2.2.7",
-    "react-google-login": "^5.2.2",
-    "react-html-table-to-excel": "^2.0.0",
     "react-icons": "^4.11.0",
     "react-multi-carousel": "^2.8.4",
     "react-otp-input": "^3.0.2",
@@ -68,6 +59,9 @@
     "swiper": "^10.2.0",
     "xlsx": "^0.18.5",
     "yup": "^1.2.0"
+  },
+  "engines": {
+    "node": "20.4.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
