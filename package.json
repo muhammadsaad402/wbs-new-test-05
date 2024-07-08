@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "preinstall": "npm i --force",
+    "preinstall": "npm i --legacy-peer-deps",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
