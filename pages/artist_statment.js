@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 // import StatementTable from "../components/StatementTable";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ReactHTMLTableToExcel from "react-html-table-to-excel";
 import axios from "axios";
 import localStorage from "local-storage";
 import { reactLocalStorage } from "reactjs-localstorage";
@@ -62,7 +63,7 @@ function artist_statment() {
       <Topbar />
 
       <h1>Statement Table</h1>
-      {/* <div className={styles.date_filter}>
+      <div className={styles.date_filter}>
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
@@ -79,7 +80,7 @@ function artist_statment() {
           endDate={endDate}
           placeholderText="End Date"
         />
-      </div> */}
+      </div>
       <ArtistStatment
         transactions={data}
         startDate={startDate}

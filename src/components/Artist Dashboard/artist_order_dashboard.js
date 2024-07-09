@@ -7,6 +7,7 @@ import Typography from "@mui/joy/Typography";
 import styles from "../../../styles/TalentDashboard.module.css";
 import Image from "next/image";
 import Button from "@mui/material/Button";
+import DataTable from "./table";
 // import OrderCard from "./OrderCard";
 // import CompleteOrderCard from "./CompleteOrderCard";
 import Link from "next/link";

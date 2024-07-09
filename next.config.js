@@ -1,8 +1,5 @@
 // next.config.cjs
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   reactStrictMode: true,
   images: {
     // domains: ["apps.sidattech.com"],
