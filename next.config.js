@@ -3,7 +3,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // reactStrictMode: true,
+  reactStrictMode: true,
   images: {
     // domains: ["apps.sidattech.com"],
     domains: ["dev7.sidat.digital"], // Add the domain(s) for the images
